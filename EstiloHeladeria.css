@@ -1,0 +1,13 @@
+/* Estilos exclusivos de Heladero.html. Los estilos comunes vienen de style.css */
+.heladeria-seccion{padding:45px 8%;text-align:center;scroll-margin-top:120px}
+.heladeria-seccion:nth-of-type(odd){background:#1a1a1a}
+.heladeria-seccion h2{font-size:2rem;color:#00bfff;margin:0 0 14px}
+.seccion-descripcion{max-width:750px;margin:0 auto 28px;color:#ccc}
+.projects.heladeria-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding:12px 0}
+.heladeria-grid .card{min-width:0;overflow:hidden}
+.heladeria-grid .card img{width:100%;height:240px;object-fit:cover;display:block}
+.heladeria-grid .card p{color:#bbb}
+.exposicion-categoria{margin-top:42px;scroll-margin-top:120px}
+.exposicion-categoria>h3{font-size:1.65rem;color:#d382ff;text-align:left;padding-bottom:10px;border-bottom:1px solid #444}
+@media(max-width:900px){.projects.heladeria-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.heladeria-seccion{padding:32px 5%}}
+@media(max-width:600px){.projects.heladeria-grid{grid-template-columns:1fr}.heladeria-grid .card img{height:220px}.sobremi-card{flex-direction:column;text-align:center}.exposicion-categoria>h3{text-align:center}}
