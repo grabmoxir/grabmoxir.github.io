@@ -1,0 +1,272 @@
+body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        /* ===== HEADER ===== */
+        header {
+            text-align: center;
+            padding: 0rem 1rem 3rem;
+            background: linear-gradient(135deg, #440073, #0077ff);
+            color: #d382ff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        header p {
+            max-width: 600px;
+            margin: 1rem auto;
+            font-size: 1rem;
+        }
+        
+        /* ===== NAV ===== */
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background: #1e1e1e;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #00bfff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        /* ===== PROLLECTOS ===== */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 3rem 15%;
+        }
+        .card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.03);
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .card p {
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+        .card a {
+            display: inline-block;
+            color: #00bfff;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid #00bfff;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .card a:hover {
+            background: #00bfff;
+            color: #121212;
+        }
+        
+        /* ===== PIE ===== */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e1e1e;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        .socials {
+			text-align: center;
+            margin: 1rem 0;
+        }
+        .socials a {
+            margin: 0 10px;
+            color: #00bfff;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .socials a:hover {
+            color: #fff;
+        }
+        /* ===== PROXIMOS PROLLECTOS ===== */
+        .proxproj {
+            background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+            padding: 1rem 0rem 2rem;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        .proxproj h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #00bfff;
+        }
+
+        .proxproj-card {
+            max-width: 700px;
+            margin: auto;
+            background: #181818;
+            border-radius: 15px;
+            padding: 2rem 0rem 2rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .proxproj-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+        }
+
+        .proxproj-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* ===== SOBRE MI ===== */
+        .sobremi {
+            background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+            padding: 1rem 15% 1rem;
+            color: #e0e0e0;
+        }
+        .sobremi h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #00bfff;
+            text-align: center;
+        }
+        .sobremi-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .sobremi-card {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: #181818;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+        }
+        .sobremi-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .sobremi-card h3 {
+            margin: 0 0 0.5rem;
+            color: #fff;
+        }
+        .sobremi-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        /* Invertida */
+        .sobremi-card.reverse {
+            flex-direction: row-reverse;
+        }
+
+/* ===== MENÚ PRINCIPAL ===== */
+header { padding-bottom: 0; }
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(15, 12, 35, 0.55);
+}
+.main-nav > a,
+.portfolio-menu > summary {
+    display: block;
+    margin: 0;
+    padding: 0.65rem 1.15rem;
+    border-radius: 9px;
+    color: #fff;
+    font: 600 0.95rem 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.main-nav > a:hover,
+.main-nav > a:focus-visible,
+.portfolio-menu > summary:hover,
+.portfolio-menu > summary:focus-visible,
+.portfolio-menu[open] > summary {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+}
+.portfolio-menu { position: relative; }
+.portfolio-menu > summary { list-style: none; }
+.portfolio-menu > summary::-webkit-details-marker { display: none; }
+.portfolio-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 30;
+    min-width: 180px;
+    padding: 0.4rem;
+    background: #1e1e2e;
+    border: 1px solid #52507a;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+.portfolio-options a {
+    display: block;
+    margin: 0;
+    padding: 0.7rem 0.85rem;
+    border-radius: 7px;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+.portfolio-options a:hover,
+.portfolio-options a:focus-visible {
+    color: #fff;
+    background: #5040a0;
+}
+@media (hover: hover) {
+    .portfolio-menu:hover > .portfolio-options { display: block; }
+    .portfolio-menu:not([open]):hover > .portfolio-options { display: block; }
+    .portfolio-menu:not([open]) > .portfolio-options { display: none; }
+}
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .main-nav { gap: 0.15rem; padding: 0.65rem; }
+    .main-nav > a, .portfolio-menu > summary { padding: 0.55rem 0.65rem; font-size: 0.85rem; }
+    .portfolio-options { left: auto; right: 0; }
+}
