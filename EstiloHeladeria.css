@@ -1,0 +1,129 @@
+
+/* ===================================== */
+/* PORTFOLIO HELADERÍA                    */
+/* ===================================== */
+
+
+/* ===== SECCIONES ===== */
+
+.heladeria-seccion {
+    padding: 50px 8%;
+    text-align: center;
+    scroll-margin-top: 110px;
+}
+
+.heladeria-seccion:nth-of-type(even) {
+    background: #1a1a1a;
+}
+
+.heladeria-seccion h2 {
+    font-size: 2rem;
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.seccion-descripcion {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #cccccc;
+}
+
+
+/* ===== CUADRÍCULA DE TRABAJOS ===== */
+
+/* Sobrescribe únicamente la distribución
+   de .projects del CSS general */
+
+.projects.heladeria-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+    padding: 20px 0;
+}
+
+
+/* ===== IMÁGENES ===== */
+
+/* Mantiene todas las fotografías
+   con proporciones uniformes */
+
+.heladeria-grid .card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== TARJETAS ===== */
+
+.heladeria-grid .card {
+    overflow: hidden;
+}
+
+.heladeria-grid .card h3 {
+    margin-top: 10px;
+}
+
+.heladeria-grid .card p {
+    color: #bbbbbb;
+}
+
+
+/* ===== EXPOSICIÓN ===== */
+
+.exposicion-categoria {
+    margin-top: 50px;
+    scroll-margin-top: 110px;
+}
+
+.exposicion-categoria > h3 {
+    font-size: 1.7rem;
+    color: #d382ff;
+    text-align: left;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+
+/* ===== TABLETS ===== */
+
+@media (max-width: 900px) {
+
+    .projects.heladeria-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .heladeria-seccion {
+        padding: 35px 5%;
+    }
+
+}
+
+
+/* ===== MÓVILES ===== */
+
+@media (max-width: 600px) {
+
+    .projects.heladeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heladeria-seccion h2 {
+        font-size: 1.6rem;
+    }
+
+    .heladeria-grid .card img {
+        height: 220px;
+    }
+
+    .exposicion-categoria > h3 {
+        text-align: center;
+    }
+
+}
